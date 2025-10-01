@@ -1,0 +1,21 @@
+[project]
+name = "chatbot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "JaveriaNigar", email = "nigarhaider86@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "chainlit>=2.8.1",
+    "openai-agents>=0.2.0",
+    "pip>=25.2",
+]
+
+[project.scripts]
+chatbot = "chatbot:main"
+
+[build-system]
+requires = ["uv_build>=0.8.4,<0.9.0"]
+build-backend = "uv_build"
